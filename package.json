@@ -19,6 +19,7 @@
     "@types/testing-library__jest-dom": "^5.14.5",
     "@types/webpack": "^5.28.0",
     "@types/webpack-env": "^1.18.0",
+    "axios": "1.7.2",
     "chalk": "4.1.2",
     "cross-env": "7.0.3",
     "eslint-config-prettier": "8.5.0",
@@ -32,6 +33,7 @@
     "inquirer": "7.3.3",
     "inquirer-directory": "2.2.0",
     "jest-styled-components": "7.1.1",
+    "launchdarkly-react-client-sdk": "3.2.0",
     "lint-staged": "13.0.3",
     "node-plop": "0.26.3",
     "plop": "2.7.6",
@@ -62,7 +64,7 @@
     "web-vitals": "2.1.4"
   },
   "scripts": {
-    "start": "PORT=3001 react-scripts start",
+    "start": "PORT=8888 react-scripts start --host 0.0.0.0",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",

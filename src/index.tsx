@@ -13,6 +13,7 @@ import ReactDOM from 'react-dom/client';
 import { Provider } from 'react-redux';
 import FontFaceObserver from 'fontfaceobserver';
 
+
 // Use consistent styling
 import 'sanitize.css/sanitize.css';
 

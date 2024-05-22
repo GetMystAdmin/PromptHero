@@ -15,9 +15,11 @@ import { GlobalStyle } from 'styles/global-styles';
 import { HomePage } from './pages/HomePage/Loadable';
 import { NotFoundPage } from './pages/NotFoundPage/Loadable';
 import { useTranslation } from 'react-i18next';
+import { asyncWithLDProvider } from 'launchdarkly-react-client-sdk';
 
 export function App() {
   const { i18n } = useTranslation();
+  const LDProvider = asyncWithLDProvider({ clientSideID: 'mutationindex' });
   return (
     <BrowserRouter>
       <Helmet
@@ -25,7 +27,7 @@ export function App() {
         defaultTitle="PromptHero"
         htmlAttributes={{ lang: i18n.language }}
       >
-        <meta name="description" content="A Evolutionary Algorithm Story" />
+        <meta name="description" content="An Evolutionary Algorithm Story" />
       </Helmet>
 
       <Routes>
