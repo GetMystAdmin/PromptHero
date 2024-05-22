@@ -69,9 +69,37 @@ export function HomePage() {
                   style={{
                     border: '1px dashed #ccc',
                     width: '70%', 
-                    height: '90vh', 
-                  }}>
+                    height: '60vh', 
+                }}>
                   Placeholder
+                </div>
+                <div 
+                  style={{
+                    display: 'flex',
+                    justifyContent: 'space-between',
+                    marginTop: '10px',
+                    width: '70%',
+                }}>
+                  <button 
+                    type="button"
+                    style={{
+                      padding: '10px 20px',
+                      fontSize: '1em',
+                      textAlign: 'center',
+                    }}
+                  >
+                    Thumbs Up
+                  </button>
+                  <button 
+                    type="button"
+                    style={{
+                      padding: '10px 20px',
+                      fontSize: '1em',
+                      textAlign: 'center',
+                    }}
+                  >
+                    Thumbs Down
+                  </button>
                 </div>
             </div>
         </div>
